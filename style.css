@@ -1,0 +1,150 @@
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: arial, sans-serif;	
+	font-size: 10px;
+}
+
+header{
+	background-color: #212B40;
+	line-height: 60px;
+	width: 100%;
+	position: fixed;
+	box-shadow: 5px 5px 25px #000;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo h1{
+	color: #FFF;
+	text-shadow: 1px 1px #000;
+	font-size:2.5rem;
+	padding-left: 20px;
+}
+
+.menu{
+	display: flex;
+	font-size: 1.5rem;
+	list-style: none;
+}
+
+.menu a:link, a:visited{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFF;
+	padding: 10px;
+	text-shadow: 1px 1px #000;
+}
+
+.menu a:hover, a:active{
+	background-color: #8593A6;
+	color: #FFF;
+}
+
+#hero{
+	background: url('../images/hero.jpg');
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section h1{
+	font-size: 2.5rem;
+	margin: 60px auto;
+	text-align: center;
+}
+
+section{
+	font-size: 1.5rem;
+	height: 100vh;
+	padding: 60px;
+	line-height: 30px;
+}
+
+#about{
+	background-color: #8593A6;
+	text-align: justify;
+}
+
+#gallery{
+	background-color: #8593A6;
+	text-align: center;
+}
+
+#gallery img{
+	width: 300px;
+	height: 180px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 25px #000;
+	border: 1px #FFF solid;
+	object-fit: cover;
+	transition: transform 0.4s ease;
+}
+
+#gallery img:hover{
+	transform: scale(1.1);
+}
+section#maps{
+	background-color: #8593A6;
+	padding-top: 60px;
+}
+
+#contacts{
+	background-color: #8593A6;
+	font-size: 1.5rem;
+	padding: 50px;
+	text-align: center;
+}
+
+#contacts label{
+display: block;
+margin-top: 20px;
+}
+
+#contacts input, #contacts textarea {
+    width: 100%;           /* Ocupa a largura disponível */
+    max-width: 400px;      /* Mas não passa de 400px */
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 0;
+    display: block;        /* Transforma em bloco para alinhar verticalmente */
+    margin: 10px auto;     /* Centraliza e dá espaço entre eles */
+    box-sizing: border-box; 
+    resize: none;          /* Impede o usuário de deformar a caixa */
+}
+
+#contacts button{
+	background-color: #000;
+	color: #FFFFFF;
+	border: 0;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+#contacts button:hover{
+	background-color: #FFFFFF;
+	color: #000;
+}
+
+footer{
+	background-color: #212B40;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+}
